@@ -44,4 +44,9 @@ return require('packer').startup(function(use)
 		}
 	}
 	
+    -- Lualine, the pretty statusline
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
 end)
